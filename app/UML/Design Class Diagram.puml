@@ -1,0 +1,29 @@
+@startuml
+
+Title Design Class
+
+Display "1" *-- "1" LiveFeed
+
+Display "2" o-- Options
+
+Options *-- "1" Sun
+
+Options *-- "1" Moon
+
+Display o-- TrackingInfo
+
+Class TrackingInfo {
+
+Time
+
+Location
+
+Coordinates
+
+}
+
+hide empty members
+
+hide methods
+
+@enduml

@@ -1,0 +1,34 @@
+
+@startsalt
+{
+{T
++Goal: Choose to track a heavenly body
+
+++Entry Conditions:
+
++++Start the app
+
+++Scenario:
+
++++Splash screen appears and disappears
+
++++camera live feed is shown
+
++++user can select which body to track
+
++++once selected, the tracking data is downloaded from the Naval Database
+
++++tracking information is displayed over the live feed
+
+++Exceptions:
+
++++If there's no internet connection, compute locations on device instead.
+
+++Exit conditions:
+
++++Successful: User closes app
+
++++Failure: Device crashes
+}
+}
+@endsalt

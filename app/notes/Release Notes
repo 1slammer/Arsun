@@ -1,0 +1,15 @@
+RELEASE NOTES ARsun v0.1
+
+App that displays the sun or moons position and past and future track in a virtual reailty overlay
+
+FEATURES
+
+Sun and moon data is collected from the USNO website while connected to internet
+Moon data is calculated locally if no connection available
+Low pass filter for smoothing motion data has been tweaked
+Tracked body stops at screen edge to indicate direction to user
+Horizon indicator added, multiple ones can be added at different degrees and line lengths
+
+While the splash screen does support screen rotation, the graphing algorithm for the sun
+and moon has not been perfected for landscape mode. The main activity is locked in the
+portrait position

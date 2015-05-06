@@ -1,0 +1,24 @@
+@startuml
+
+skinparam packageStyle rect
+
+actor User
+
+actor Naval_Database
+
+rectangle Arsun {
+
+User --> (Track Body)
+
+(Track Body) .> (Download Data) : include
+
+(Track Body) .> (Calculate Data) : include
+
+Naval_Database --> (Download Data)
+
+(Track Body) .> (Display Data) : include
+
+}
+
+
+@enduml

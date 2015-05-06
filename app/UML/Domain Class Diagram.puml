@@ -1,0 +1,26 @@
+@startuml
+title Domain Class Diagram
+
+class "Celestial Bodies" as bod
+class Sun
+class Moon
+
+class hardware
+class accelerometer
+class magnetometer
+class camera
+
+hardware <-- accelerometer
+hardware <-- magnetometer
+hardware <-- camera
+
+bod <-- Sun
+bod <-- Moon
+
+class "Augmented View"
+
+hide empty members
+
+hide methods
+
+@enduml

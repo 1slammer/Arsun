@@ -1,0 +1,27 @@
+@startuml
+
+title Sequence
+
+User -> App: Start up
+
+App --> User: Display splash screen
+
+App --> User: Display camera view with sun and moon options
+
+User -> App: Select sun or moon
+
+alt Internet Connection
+
+App -> Naval_Database: Request data for user's position
+
+Naval_Database --> App: Tracking data for sun or moon
+
+else No_Connection
+
+App -> App: Calculate data based on user's position
+
+end
+
+App --> User: Display data as line across sky
+
+@enduml
